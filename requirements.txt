@@ -1,2 +1,5 @@
 streamlit
 groq
+scikit-learn
+joblib
+pandas

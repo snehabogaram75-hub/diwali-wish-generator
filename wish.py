@@ -39,7 +39,7 @@ Rules:
 - Sound like a real person texting, NOT a poem or greeting card.
 - No flowery or bookish words, no clichés like "light up your life" or "sparkle".
 - Use {name}'s name once. Use 1-2 emojis (🪔 ✨ 🎆 🎇).
-- Telugu script only if Language is Telugu, otherwise Roman letters only.
+- If Language is Telugu, write in Telugu script (తెలుగు) only. For every other language use Roman letters only, never Tamil, Telugu or Devanagari script.
 
 {EXAMPLES}
 
