@@ -30,6 +30,7 @@ English boss: Wishing you and your family a very Happy Diwali. May the year ahea
 
 def generate_wish(name, relation, language="Tanglish"):
     tone = TONE.get(relation, "warm and natural")
+    extra = "\nTelugu script example (friend): రవి, దీపావళి శుభాకాంక్షలు రా! 🪔 మిఠాయిలు బాగా తిను, టపాసులు జాగ్రత్తగా కాల్చు. (sweets = మిఠాయిలు, crackers = టపాసులు)" if language == "Telugu" else ""
     prompt = f"""Write a Diwali wish for {name}, who is my {relation}.
 Language: {language}. (Tanglish = Telugu in English letters mixed with English, the way Telugu people actually text on WhatsApp.)
 Tone: {tone}.
@@ -41,7 +42,7 @@ Rules:
 - Use {name}'s name once. Use 1-2 emojis (🪔 ✨ 🎆 🎇).
 - If Language is Telugu, write in Telugu script (తెలుగు) only. For every other language use Roman letters only, never Tamil, Telugu or Devanagari script.
 
-{EXAMPLES}
+{EXAMPLES}{extra}
 
 Return only the wish text."""
     r = client.chat.completions.create(
