@@ -22,7 +22,7 @@ st.caption("Personalized Diwali wishes, in your own style!")
 
 name = st.text_input("Name", placeholder="Ravi")
 relation = st.selectbox("Relation", ["friend", "amma", "nanna", "brother", "sister", "boss", "colleague", "teacher", "student", "relative"])
-language = st.radio("Language", ["Tanglish", "Telugu", "English", "Hindi"], horizontal=True)
+language = st.radio("Language", ["Tanglish", "English", "Hindi"], horizontal=True)
 
 if st.button("Generate Wish ✨", disabled=not name.strip()):
     with st.spinner("Writing 3 wishes and picking the best one..."):
