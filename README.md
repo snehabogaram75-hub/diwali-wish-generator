@@ -1,6 +1,6 @@
 # Diwali Wish Generator 🪔
 
-**Live demo:** (https://dashboard..com
+**Live demo:** https://diwali-wish-generator.onrender.com
 
 A small web app that writes personalized Diwali wishes in Tanglish, Telugu, English or Hindi, then turns the best one into a downloadable greeting card.
 
