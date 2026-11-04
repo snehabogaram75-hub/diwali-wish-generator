@@ -1,5 +1,7 @@
 # Diwali Wish Generator 🪔
 
+**Live demo:** (https://dashboard..com
+
 A small web app that writes personalized Diwali wishes in Tanglish, Telugu, English or Hindi, then turns the best one into a downloadable greeting card.
 
 ## How it works
@@ -23,9 +25,8 @@ A small web app that writes personalized Diwali wishes in Tanglish, Telugu, Engl
 ## Known limitations
 
 - The classifier is trained on only 49 wishes. Labels were assisted by rules (poetic-prompt outputs and wrong-script outputs marked as stiff), so the 1.00 cross-validation score mostly reflects that easy split. It is a working pipeline, not a validated quality metric.
-- The classifier was trained on Roman-script text, so its scores are unreliable for Telugu script output.
-- Casual Telugu in Telugu script is still weaker than Tanglish or English. Formal Telugu is fine.
-- The public demo link runs from a laptop through a temporary tunnel, so it is not always online.
+- Telugu-script output is hidden in the UI because casual Telugu in Telugu script was weaker than Tanglish or English. The classifier was also trained on Roman-script text only.
+- The demo runs on Render's free tier, so it can take 30-50 seconds to wake up after inactivity.
 
 ## Stack
 
